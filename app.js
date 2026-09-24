@@ -1,8 +1,9 @@
-const projectOverview = document.querySelector(".project-overview");
+const mainArea = document.querySelector(".main-area");
+const projectHeading = document.querySelector(".project-heading");
 
 for (let i = 0; i < 10; i++) {
   let projectCard = document.createElement("div");
-  projectCard.classList.add("project-card");
+  projectCard.classList.add("card");
 
   let projectHeading = document.createElement("div");
   let projectDescription = document.createElement("div");
@@ -14,5 +15,5 @@ for (let i = 0; i < 10; i++) {
   projectCard.appendChild(projectHeading);
   projectCard.appendChild(projectDescription);
 
-  projectOverview.appendChild(projectCard);
+  mainArea.appendChild(projectCard);
 }

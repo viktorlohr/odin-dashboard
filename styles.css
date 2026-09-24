@@ -1,5 +1,13 @@
 @import url(normalize.css);
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 1rem;
+  margin-bottom: 0.2rem;
+}
+
 em {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -37,12 +45,14 @@ body {
 
 .main-area {
   grid-area: 2 / 2 / 3 / 2;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .project-overview {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 1rem;
+  margin: 1rem;
   gap: 1rem;
 }
 
@@ -62,3 +72,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.main-area .right-side {
+  display: flex;
+  flex-direction: column;
+}
