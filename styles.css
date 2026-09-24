@@ -1,6 +1,5 @@
 @import url(normalize.css);
 
-
 em {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -37,13 +36,21 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
+  gap: 1rem;
 }
 
 .project-overview > * {
-  width: 20rem;
-  height: 13rem;
   background-color: white;
   border-radius: 6px;
   border-left: 6px solid orange;
   box-shadow: 0 0 12px gray;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.project-overview > * > div:first-child {
+  color: black;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
