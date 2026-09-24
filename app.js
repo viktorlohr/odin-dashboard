@@ -1,4 +1,4 @@
-const mainArea = document.querySelector(".main-area");
+const projectArea = document.querySelector(".projects");
 const projectHeading = document.querySelector(".project-heading");
 
 for (let i = 0; i < 10; i++) {
@@ -15,5 +15,5 @@ for (let i = 0; i < 10; i++) {
   projectCard.appendChild(projectHeading);
   projectCard.appendChild(projectDescription);
 
-  mainArea.appendChild(projectCard);
+  projectArea.appendChild(projectCard);
 }

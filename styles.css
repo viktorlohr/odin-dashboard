@@ -45,34 +45,23 @@ body {
 
 .main-area {
   grid-area: 2 / 2 / 3 / 2;
+
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 
-.project-overview {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 1rem;
-  gap: 1rem;
+.announcements {
+  grid-column: 2 / 3;
 }
 
-.project-overview > * {
+.trendings {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.card {
   background-color: white;
-  border-radius: 6px;
-  border-left: 6px solid orange;
-  box-shadow: 0 0 12px gray;
+  margin: 0.5rem;
   padding: 1rem;
-  font-size: 0.8rem;
-  color: gray;
-}
-
-.project-overview > * > div:first-child {
-  color: black;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.main-area .right-side {
-  display: flex;
-  flex-direction: column;
+  border-radius: 1rem;
 }
