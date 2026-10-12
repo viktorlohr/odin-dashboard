@@ -30,9 +30,13 @@ body {
   grid-column: 2 / 3;
 
   display: flex;
-  justify-content: space-around;
-  background-color: whitesmoke;
+  justify-content: left;
+  gap: 1rem;
+  align-items: center;
+  background-color: #f5f5f5;
   box-shadow: 0 2px 12px gray;
+
+  padding: 1rem;
 }
 
 .sidebar {
@@ -84,27 +88,34 @@ body {
   grid-column: 1 / -1;
 }
 
-/* .header {
-
-} */
-
 .search-container {
   display: flex;
+  flex: 1;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 2px;
+  box-shadow: none;
 }
 
 .search-bar {
   background-color: var(--background-accent-strong);
   border: none;
   margin-left: none;
-  margin-right: 1vw;
+  margin-right: 2vw;
+  flex: 1;
 
   /* this does not have any effect */
   padding: 6px 12px;
   margin: 12px;
   margin-left: 0px;
   border-radius: 12px;
+}
+
+.profile-icon {
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px black;
 }
