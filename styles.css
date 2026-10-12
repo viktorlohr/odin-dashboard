@@ -18,7 +18,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(224, 235, 245);
 }
 
 .header {
@@ -64,6 +64,7 @@ body {
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 1rem;
+  box-shadow: 2px 2px 2px gray;
 }
 
 .projects {
