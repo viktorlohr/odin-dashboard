@@ -198,3 +198,28 @@ ul {
   margin-top: 1rem;
   justify-content: end;
 }
+
+.announcement {
+  border-bottom: 1px solid gray;
+  padding: 6px 0px;
+}
+
+.announcements > .card {
+  padding-top: 0.2rem;
+}
+.announcement > .title {
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.body {
+  color: rgb(79, 79, 79);
+}
+
+.announcement > .body {
+  font-size: 0.8rem;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+}
