@@ -92,6 +92,12 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.project.card {
+  border-left: 6px solid orange;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
 .project.card > .title {
   font-weight: bold;
   font-size: 1.2rem;
