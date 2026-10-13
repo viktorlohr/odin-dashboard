@@ -58,9 +58,19 @@ body {
 }
 
 .nav-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
   justify-content: left;
   gap: 0.5rem;
+}
+
+.nav-item > .icon {
+  justify-self: right;
+}
+
+.nav-item > *:last-child {
+  justify-self: left;
 }
 
 .main-area {
