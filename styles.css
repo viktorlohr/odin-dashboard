@@ -4,6 +4,7 @@
   --background-accent: rgb(224, 235, 245);
   --background-accent-strong: rgb(161, 190, 212);
   --background-var: rgb(61, 157, 254);
+  --lighter-font-col: rgb(70, 70, 70);
 }
 
 h1,
@@ -219,7 +220,7 @@ ul {
 }
 
 .body {
-  color: rgb(79, 79, 79);
+  color: var(--lighter-font-col);
 }
 
 .announcement > .body {
@@ -228,4 +229,46 @@ ul {
 
 .announcement:last-child {
   border-bottom: none;
+}
+
+.trending-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: left;
+}
+
+.user > .profile-icon {
+  grid-area: 1 / 1 / 3 / 1;
+  justify-self: right;
+  align-self: center;
+  margin-right: 6px;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.user > .bio {
+  grid-area: 2 / 2 / 3 / 3;
+  font-size: 0.6rem;
+  align-self: start;
+  color: var(--lighter-font-col);
+}
+
+.user > .shorthand {
+  align-self: end;
+  font-size: 0.8rem;
+}
+
+.user:first-child > .profile-icon {
+  background-color: rgb(185, 11, 185);
+}
+
+.user:last-child > .profile-icon {
+  background-color: lightblue;
 }
