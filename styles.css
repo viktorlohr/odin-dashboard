@@ -97,7 +97,6 @@ body {
 .search-container {
   display: flex;
   flex: 1;
-  flex-wrap: wrap;
   justify-content: left;
   align-items: center;
   gap: 2px;
@@ -144,4 +143,9 @@ body {
 
 .greeting-text > .greeting {
   font-size: 0.8rem;
+}
+
+
+.header > ul {
+  
 }
